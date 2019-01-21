@@ -1,11 +1,10 @@
-import _ from 'lodash';
+import Vue from 'vue';
 
-function component() {
-  let element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+var app = new Vue({
+  data: {
+    message: 'Hello Vue!'
+  },
+  render (createElement) {
+    return createElement('div', this.message);
+  }
+}).$mount('#app');
