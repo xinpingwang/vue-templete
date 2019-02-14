@@ -3,13 +3,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+  import Vue from 'vue'
 
-export default Vue.extend({
-  data: function() {
-    return {
-      msg: 'Hello Vue!'
+  export default Vue.extend({
+    data: function () {
+      return {
+        msg: 'Hello Vue!'
+      }
     }
-  }
-})
+  })
 </script>

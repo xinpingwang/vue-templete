@@ -5,7 +5,7 @@ let app = new Vue({
   data: {
     message: 'Hello Vue!'
   },
-  render (createElement) {
+  render(createElement) {
     return createElement(App);
   }
 });
