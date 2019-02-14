@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/main.ts',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, '../dist')
   },
   module: {
     rules: [
@@ -34,9 +34,6 @@ module.exports = {
   plugins: [
     // make sure to include the plugin!
     new VueLoaderPlugin(),
-    new CopyWebpackPlugin([{from: 'index.html', to: 'index.html'}])
-  ],
-  devServer: {
-    contentBase: './dist'
-  }
+    new CopyWebpackPlugin([{from: 'index.html', to: '../dist/index.html'}])
+  ]
 };
