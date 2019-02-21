@@ -31,6 +31,12 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: ['.ts', '.js', '.vue', '.json'],
+    alias: {
+      '@': path.join(__dirname, '..', 'src'),
+    }
+  },
   plugins: [
     // make sure to include the plugin!
     new VueLoaderPlugin(),
