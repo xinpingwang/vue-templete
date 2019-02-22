@@ -1,11 +1,10 @@
 import Vue from 'vue';
 import App from './App.vue';
+import router from './router'
 
 let app = new Vue({
-  data: {
-    message: 'Hello Vue!'
-  },
-  render(createElement) {
+  router: router,
+  render: function (createElement) {
     return createElement(App);
   }
 });
