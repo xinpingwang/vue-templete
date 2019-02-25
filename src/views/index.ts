@@ -1,4 +1,4 @@
-import HelloWorld from './HelloWorld'
+import HelloWorld from './HelloWorld.vue'
 
 const Views = {
   HelloWorld
