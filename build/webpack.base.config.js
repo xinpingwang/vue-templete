@@ -40,6 +40,6 @@ module.exports = {
   plugins: [
     // make sure to include the plugin!
     new VueLoaderPlugin(),
-    new CopyWebpackPlugin([{from: 'index.html', to: '../dist/index.html'}])
+    new CopyWebpackPlugin({patterns : [{from: 'index.html', to: '../dist/index.html'}]})
   ]
 };
